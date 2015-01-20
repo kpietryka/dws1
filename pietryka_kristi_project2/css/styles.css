@@ -40,9 +40,9 @@ ul, ol {
 	line-height: 1.5em;
 }
 
-ul {
+ul li {
 	display: inline;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 
 
