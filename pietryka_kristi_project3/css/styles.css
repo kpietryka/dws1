@@ -1,0 +1,118 @@
+/* Main Styles */
+
+@font-face {
+	font-family: 'ChunkFiveRegular';
+	src: url('chunkfive.otf');
+}
+
+div {
+	background: #feffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #feffff 0%, #ddf1f9 35%, #a0d8ef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(35%,#ddf1f9), color-stop(100%,#a0d8ef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+	
+	opacity: 0.9;
+	max-width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px solid #043056;
+	border-radius: 10px;
+	box-shadow: 5px 5px #8ca1b3;
+	text-align: center;
+}
+
+div #main-text {
+
+}
+
+
+/* Headings */
+
+h1, h2, h3 {
+	font-family: ChunkFiveRegular, Arial, sans-serif;
+	font-weight: bold;
+	text-shadow: 2px 2px #8b8f92;
+}
+
+p {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	line-height: 1.5em;
+}
+
+
+
+/* Navigation */
+
+ul, ol {
+	list-style-type: none;
+	line-height: 1.5em;
+}
+
+ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+
+
+/* Links */
+
+a:link {
+	text-decoration: none;
+	color: #486e8f;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #043056;
+}
+
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:active {
+	text-decoration: none;
+	font-weight: bold;
+	color: #043056;
+}
+
+
+/* Gallery */
+
+div {
+	overflow: auto;
+}
+
+div #gallery {
+	width: 99%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+img {
+	width: 200px;
+}
+
+div.photo {
+	float: left;
+	padding: 0;
+	margin: 10px;
+}
+
+figure img {
+	background-image: url("images/pattern_136.gif"); 
+	background-repeat: none;
+	background-position: bottom;
+}
