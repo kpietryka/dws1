@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+	<header>
 		<title>About Photography</title>
 		<link href="css/styles.css" type="text/css" rel="stylesheet" />
-	</head>
+	</header>
 	<body>
-		<div id="main-text">
-			<h1 id="top">Photography</h1>
-			<ul>
-				<li><a href="#definition">What is Photography?</a></li>
-				<li><a href="#involved">What is Involved?</a></li>
-				<li><a href="#starting">How to Get Started</a></li>
-			</ul>
+		<section id="main-text">
+			<nav>
+				<h1 id="top">Photography</h1>
+				<ul>
+					<li><a href="#definition">What is Photography?</a></li>
+					<li><a href="#involved">What is Involved?</a></li>
+					<li><a href="#starting">How to Get Started</a></li>
+				</ul>
+			</nav>
 		
 			<h2 id="definition">What is Photography?</h2>
 			<p><strong>Photography</strong> is the science, art and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.</p>
@@ -26,7 +28,78 @@
 				<li>A subject--photograph ANYTHING you want!</li>
 				<li>A willingness to learn (cheesy, but true)</li>
 			</ol>
-			<div id="gallery"><!-- Gallery starts here -->
+			
+			<article class="schedule">
+				<h2>Typical Photography Course Schedule</h2>
+				<table>
+					<tr>
+						<th></th>
+						<th scope="col">Week 1</th>
+						<th scope="col">Week 2</th>
+						<th scope="col">Week 3</th>
+					</tr>
+					<tr class="even">
+						<th scope="row" id="title">Topic:</th>
+						<td>Focus</td>
+						<td>Aperture</td>
+						<td>Shutter Speed</td>
+					</tr>
+					<tr>
+						<th scope="row" id="title">Start Time:</th>
+						<td>5pm</td>
+						<td>5pm</td>
+						<td>5pm</td>
+					</tr>
+					<tr class="even">
+						<th scope="row" id="title">End Time:</th>
+						<td>9pm</td>
+						<td>9pm</td>
+						<td>9pm</td>
+					</tr>
+				</table>
+			</article>
+
+			<article class="survey">
+				<form>
+					<fieldset>
+						<label for="name" required="required" placeholder="Full Name">Name:</label>
+						<input type="text" id="name" name="name">
+						
+						<section>
+							<label for="email" required="required">Email:</label>
+							<input type="email" id="email" name="email">
+						</section>
+						
+						<section>
+							<label for="photographer">Are you a photographer?</label>
+							<input type="radio" id="photographer" name="photographer" value="yes">
+							<input type="radio" id="photographer" name="photographer" value="no">
+						</section>
+						
+						<section>
+							<label for="camera">What do you shoot with?</label>
+							<select name="camera" id="camera">
+								<option value="dslr">DSLR</option>
+								<option value="slr">SLR</option>
+								<option value="point-and-shoot">Point-And-Shoot</option>
+								<option value="phone">Phone</option>
+							</select>
+						</section>						
+						
+						<section>
+							<label for="comments">Comments:</label>
+							<textarea id="comments">Comments on photography?</textarea>
+						</section>
+						
+						<section>
+							<input type="submit" value="Submit">
+						</section>
+
+					</fieldset>
+				</form>
+			</article>
+			
+			<article id="gallery"><!-- Gallery starts here -->
 				<h3>The Evolution of Cameras</h3>
 				<div class="photo">
 					<figure>
@@ -52,10 +125,11 @@
 					<figure>
 						<a href="images/camera5.jpg"><img src="images/camera5-small.jpg" alt="camera 4" /></a>
 					</figure>
-				</div>	
-			</div> <!--End of gallery div -->
+				</article>	<!-- End of gallery article -->
+		</section> <!-- end of main-text section -->
+		<footer>
 			<p>Resource: <a href="http://en.wikipedia.org/wiki/Photography">http://en.wikipedia.org/wiki/Photography</a></p>	
 			<p><a href="#top">Back to Top</a></p>
-		</div> <!-- end of main-text div -->
+		</footer>
 	</body>
 </html>

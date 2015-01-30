@@ -5,16 +5,8 @@
 	src: url('chunkfive.otf');
 }
 
-div {
-	background: #feffff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #feffff 0%, #ddf1f9 35%, #a0d8ef 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(35%,#ddf1f9), color-stop(100%,#a0d8ef)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
-	
+section#main-text {
+	background: #e8f2f9;
 	opacity: 0.9;
 	max-width: 80%;
 	height: 100%;
@@ -24,11 +16,9 @@ div {
 	border-radius: 10px;
 	box-shadow: 5px 5px #8ca1b3;
 	text-align: center;
+	overflow: auto;
 }
 
-div #main-text {
-
-}
 
 
 /* Headings */
@@ -85,15 +75,48 @@ a:active {
 	color: #043056;
 }
 
+/******* Table */
 
-/* Gallery */
+table {
+	width: 50%;
+	padding: 10px;
+	font-size: .9em;
+	border: 1px solid #666;
+	background-color: #fff;
+	border-spacing: 10px;
+	margin: 10px auto;
+}
+
+th {
+	text-transform: uppercase;
+}
+
+th#title {
+	text-align: right;
+}
+
+th td {
+	text-align: left;
+}
+
+tr.even th, tr.even td {
+	background-color: #ccc;
+}
+
+td:hover {
+	font-style: bold;
+	background-color: #ffffcc;
+}
+
+
+/******* Gallery */
 
 div {
 	overflow: auto;
 }
 
-div #gallery {
-	width: 99%;
+article#gallery {
+	width: 85%;
 	margin-top: 5%;
 	margin-bottom: 10%;
 	margin-left: auto;
@@ -106,7 +129,9 @@ img {
 }
 
 div.photo {
+	display: inline-block;
 	float: left;
+	clear: both;
 	padding: 0;
 	margin: 10px;
 }
@@ -116,3 +141,20 @@ figure img {
 	background-repeat: none;
 	background-position: bottom;
 }
+
+/* footer */
+footer {
+	text-align: center;
+}
+
+/******* Form */
+fieldset {
+	padding: 10px;
+	margin: 10px;
+	font-size: 1em;
+	color: #000;
+	border: 1px solid #fff;
+	text-align: center;
+	background-color: #e8f2f9;
+}
+
